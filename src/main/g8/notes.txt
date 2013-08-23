@@ -35,8 +35,8 @@ The following options are not specific to writing plugins, but are frequently us
   case LabelDef(name, params, rhs) =>
      // used for tailcalls and like
      // while/do are desugared to label defs as follows:
-     // while (cond) body ==> LabelDef($L, List(), if (cond) { body; L$() } else ())
-     // do body while (cond) ==> LabelDef($L, List(), body; if (cond) L$() else ())
+     // while (cond) body ==> LabelDef(\$L, List(), if (cond) { body; L\$() } else ())
+     // do body while (cond) ==> LabelDef(\$L, List(), body; if (cond) L\$() else ())
   case Import(expr, selectors) =>                                 (eliminated by typecheck)
      // import expr.{selectors}
      // Selectors are a list of pairs of names (from, to).

@@ -1,0 +1,4 @@
+<plugin>
+    <name>$plugin_name$-plugin</name>
+    <classname>scala.compiler.plugins.$plugin_name;format="camel"$.$plugin_name;format="Camel"$CompilerPlugin</classname>
+</plugin>
